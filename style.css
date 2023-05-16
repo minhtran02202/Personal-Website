@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  width: 100vw;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+
+div {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about {
+  background-color: azure;
+}
+
+.previous_work {
+  background-color: brown;
+}
+
+.projects {
+  background-color: azure;
+}
+.contact {
+  background-color: brown;
+}
