@@ -3,10 +3,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #000;
+  margin: 0;
 }
 
 nav {
   width: 100vw;
+  background-color: #fff;
 }
 
 ul {
@@ -20,19 +23,35 @@ ul {
 a:link {
   text-decoration: none;
   color: black;
-  font-size: 1.2rem;
+  font-size: 3vw;
 }
 
-div {
+section {
   height: 100vh;
   width: 100vw;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
+.contain {
+  display: flex;
+  align-items: center;
+}
 .about {
   background-color: azure;
+}
+
+.big_image {
+  border-radius: 50%;
+  width: 40vw;
+  height: 40vw;
+}
+
+.description {
+  text-align: center;
+  font-size: 3vw;
+  width: 40vw;
+  margin-left: 10vw;
 }
 
 .previous_work {
