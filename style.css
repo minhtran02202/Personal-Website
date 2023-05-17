@@ -9,7 +9,7 @@ body {
 
 nav {
   width: 100vw;
-  background-color: #fff;
+  background-color: #ccc;
 }
 
 ul {
@@ -23,7 +23,7 @@ ul {
 a:link {
   text-decoration: none;
   color: black;
-  font-size: 3vw;
+  font-size: 3vh;
 }
 
 section {
@@ -38,18 +38,18 @@ section {
   align-items: center;
 }
 .about {
-  background-color: azure;
+  background-color: #fff;
 }
 
 .big_image {
   border-radius: 50%;
-  width: 40vw;
-  height: 40vw;
+  width: 40vh;
+  height: 40vh;
 }
 
 .description {
   text-align: center;
-  font-size: 3vw;
+  font-size: 3vh;
   width: 40vw;
   margin-left: 10vw;
 }
