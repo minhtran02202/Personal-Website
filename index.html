@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="index.html"></script>
+    <script type="text/javascript" src="index.js"></script>
     <title>Minh Tran Personal Website</title>
   </head>
   <body>
@@ -96,7 +96,32 @@
     </section>
 
     <section class="contact">
-      <div class="contain">Contact</div>
+      <div class="contain">
+        <div id="call-to-action">
+          <span><h1>Visit Me!</h1></span>
+          <div id="logos">
+          <a href="https://github.com/minhtran02202/" target="_blank">
+          <img src="images/githubLogo.png" alt="github logo" class="small_image">
+
+          <a href="https://www.linkedin.com/in/minh-tran-92001724a/" target="_blank">
+          <img src="images/linkedin-logo.png" alt="github logo" class="small_image">
+          </a>
+        </div>
+        </div>
+
+        <form action="/contact" id="contact-form">
+          <label for="name">Full Name: <br>
+            <input type="text">
+          </label>
+          <label for="email">Email: <br>
+            <input type="email">
+          </label>
+          <label for="message">Message: <br>
+            <input type="text">
+          </label>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     </section>
   </body>
 </html>
