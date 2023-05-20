@@ -11,10 +11,10 @@
   <body>
     <nav id="nav">
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#previous_work">Previous Work</a></li>
-        <li><a href="#project1">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a id="about_link" href="#about">About</a></li>
+        <li><a id="previous_work_link" href="#previous_work">Previous Work</a></li>
+        <li><a id="projects_link" href="#project1">Projects</a></li>
+        <li><a id="contact_link" href="#contact">Contact</a></li>
       </ul>
     </nav>
     <section id="about">
@@ -22,17 +22,13 @@
         <img
           class="big_image"
           src="images/resume pic.jpg"
-          alt="image of Minh Tran"
+          alt="Minh Tran resume picture"
         />
         <div class="description">
           <h1>Minh Tran</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-            viverra nibh cras pulvinar mattis. Semper eget duis at tellus. Id
-            semper risus in hendrerit gravida rutrum quisque non tellus.
-            Ultrices in iaculis nunc sed augue lacus viverra. Eget nulla
-            facilisi etiam dignissim diam quis enim lobortis.
+            Hi. My name is Minh Tran. I came to the U.S. 12 years ago. I am studying at Portland State University for Computer Science. My path is Software Development and Artificial Intelligence. I like to create things, do my own projects to satisfy my curious mind, and keep up with innovative tools that are constantly being introduced. 
+
           </p>
         </div>
       </div>
@@ -42,10 +38,14 @@
       <div class="contain">
         <div class="description left">
           <p>
-            Role: <br />
-            Company: Date: <br />
-            Location: <br />
-            Description:
+            <strong>Role:</strong>    Quality Assurance Specialist <br><br>
+            <strong>Company:</strong>   Multnomah County <br> <br>
+            <strong>Date:</strong>    January 2023 - Present <br><br>
+            <strong>Location:</strong>    Portland, Oregon Metropolitan Area <br ><br>
+            <strong>Description: </strong> <br><br>
+            *Maintain the existing testings up to date. <br><br>
+            *Implemented 10% more additional user story tests to the already      existing 300 tests. <br><br>
+            *Implemented Docker Selenium Grid to improve overall running speed by 3x
           </p>
         </div>
         <img
@@ -56,14 +56,15 @@
       </div>
     </section>
 
-    <section class="projects" id="project1">
-      <div class="contain">
+    <section id="project1" class="projects">
         <div class="project">
+          <a href="https://minhtran02202.github.io/pure-no-framework-to-do/" target="_blank">
           <img
             class="project_img"
             src="images/to_do.jpg"
             alt="my to-do app project demo"
           />
+          </a>
           <div class="description">
             <h1>To-Do App</h1>
             <p>
@@ -74,9 +75,9 @@
             </p>
           </div>
         </div>
-      </section>
+    </section>
 
-      <section class="projects">
+      <section id="project2" class="projects">
         <div class="project">
           <div class="description left">
             <h1>Music Card</h1>
@@ -88,10 +89,12 @@
             </p>
           </div>
 
+          <a href="https://minhtran02202.github.io/Music-Card/" target="_blank">
           <img 
             class="project_img"
             src="images/music_card.jpg" alt="my music card project demo" 
           />
+          </a>
       </div>
     </section>
 
@@ -102,24 +105,25 @@
           <div id="logos">
           <a href="https://github.com/minhtran02202/" target="_blank">
           <img src="images/githubLogo.png" alt="github logo" class="small_image">
+          </a>
 
           <a href="https://www.linkedin.com/in/minh-tran-92001724a/" target="_blank">
-          <img src="images/linkedin-logo.png" alt="github logo" class="small_image">
+          <img src="images/linkedin-logo.png" alt="linkedin logo" class="small_image">
           </a>
         </div>
         </div>
 
         <form action="mailto:example@gmail.com" method="get" enctype="text/plain" id="contact-form">
-          <label for="name">Full Name: <br>
-            <input type="text" name="subject">
-          </label>
+          <label for="subject">Full Name: <br>
+            <input type="text" name="subject" id="subject" value="">
+          </label>  
           <label for="email">Email: <br>
-            <input type="email" name="email">
+            <input type="email" name="email" id="email" value="">
           </label>
-          <label for="message">Message: <br>
-            <textarea name="body"></textarea>
+          <label for="body">Message: <br>
+            <textarea name="body" id="body" value=""></textarea>
           </label>
-          <input type="submit" value="Send"></input>
+          <input name="submit" id="submit" type="submit" value="Send"></input>
         </form>
       </div>
     </section>

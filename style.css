@@ -2,13 +2,19 @@ html {
   scroll-snap-type: y mandatory;
 }
 
+:root {
+  --white: #fffffc;
+  --black: #000000;
+  --brown: #beb7a4;
+}
+
 body {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #000;
+  background-color: var(--black);
   margin: 0;
 }
 
@@ -17,8 +23,8 @@ nav {
   position: fixed;
   top: 0;
   width: 100vw;
-  background-color: #fff;
-  border-bottom: 3px solid #000;
+  background-color: white;
+  box-shadow: 2px 2px 5px gray;
   scroll-snap-align: start;
 }
 
@@ -36,6 +42,10 @@ a:link {
   font-size: 3vh;
 }
 
+a:visited {
+  color: black;
+}
+
 section {
   height: 100vh;
   width: 100vw;
@@ -51,7 +61,7 @@ section {
   width: 80vw;
 }
 #about {
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .big_image {
@@ -65,8 +75,6 @@ section {
   font-size: 3vh;
   width: 40vw;
   margin-left: 5vw;
-  border-style: solid;
-  border-color: #ccc;
 }
 
 .left {
@@ -76,11 +84,17 @@ section {
 }
 
 #previous_work {
-  background-color: brown;
+  background-color: white;
+  color: black;
 }
 
-.projects {
-  background-color: azure;
+#project1 {
+  background-color: #fefff1;
+}
+
+#project2 {
+  background-color: #004e64;
+  color: white;
 }
 
 .project {
@@ -94,7 +108,7 @@ section {
   width: 20vw;
 }
 #contact {
-  background-color: brown;
+  background-color: var(--white);
 }
 
 #contact-form {
@@ -108,10 +122,10 @@ input[type="text"],
 input[type="email"],
 textarea {
   margin-bottom: 10px;
-  background-color: brown;
+  background-color: var(--white);
   border: none;
   outline: none;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--black);
 }
 
 #call-to-action {
@@ -126,4 +140,8 @@ textarea {
   border-radius: 50%;
   width: 5vh;
   height: 5vh;
+}
+
+img {
+  box-shadow: 2px 2px 5px black;
 }
