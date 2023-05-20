@@ -109,6 +109,7 @@ section {
 }
 #contact {
   background-color: var(--white);
+  font-size: 2rem;
 }
 
 #contact-form {
@@ -121,6 +122,7 @@ section {
 input[type="text"],
 input[type="email"],
 textarea {
+  font-size: 1.3rem;
   margin-bottom: 10px;
   background-color: var(--white);
   border: none;
