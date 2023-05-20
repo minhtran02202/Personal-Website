@@ -1,4 +1,9 @@
+html {
+  scroll-snap-type: y mandatory;
+}
+
 body {
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,8 +13,13 @@ body {
 }
 
 nav {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
   width: 100vw;
-  background-color: #ccc;
+  background-color: #fff;
+  border-bottom: 3px solid #000;
+  scroll-snap-align: start;
 }
 
 ul {
@@ -31,6 +41,7 @@ section {
   width: 100vw;
   display: flex;
   justify-content: center;
+  scroll-snap-align: start;
 }
 
 .contain {
@@ -39,7 +50,7 @@ section {
   justify-content: center;
   width: 80vw;
 }
-.about {
+#about {
   background-color: #fff;
 }
 
@@ -64,7 +75,7 @@ section {
   margin-right: 5vw;
 }
 
-.previous_work {
+#previous_work {
   background-color: brown;
 }
 
@@ -82,7 +93,7 @@ section {
   height: 50vh;
   width: 20vw;
 }
-.contact {
+#contact {
   background-color: brown;
 }
 
