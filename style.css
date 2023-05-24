@@ -16,6 +16,7 @@ body {
   justify-content: center;
   background-color: var(--black);
   margin: 0;
+  font-size: 1rem;
 }
 
 nav {
@@ -146,4 +147,15 @@ textarea {
 
 img {
   box-shadow: 2px 2px 5px black;
+}
+button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 20%;
+  height: auto;
 }
