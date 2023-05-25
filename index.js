@@ -17,16 +17,18 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.href = "https://minhtran02202.github.io/Music-Card/";
   });
 
-  function removeImg(sm_screen) {
+  function removeImg() {
+    const sm_screen = window.matchMedia("(max-width: 768px)");
+    const toDoImg = document.getElementById("toDoImg");
+    const musicCardImg = document.getElementById("musicCardImg");
     if (sm_screen.matches) {
-      const toDoImg = document.getElementById("toDoImg");
-      const musicCardImg = document.getElementById("musicCardImg");
       toDoImg.style.display = "none";
       musicCardImg.style.display = "none";
+    } else {
+      toDoImg.style.display = "block";
+      musicCardImg.style.display = "block";
     }
   }
 
-  const sm_screen = window.matchMedia("(max-width: 768px)");
-  removeImg(sm_screen);
   window.addEventListener("resize", removeImg);
 });
