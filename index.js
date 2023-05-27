@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   function removeImg() {
-    const sm_screen = window.matchMedia("(max-width: 768px)");
+    const sm_screen = window.matchMedia("(max-width: 1023px)");
     const toDoImg = document.getElementById("toDoImg");
     const musicCardImg = document.getElementById("musicCardImg");
     if (sm_screen.matches) {
